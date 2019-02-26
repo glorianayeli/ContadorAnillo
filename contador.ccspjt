@@ -1,0 +1,18 @@
+[PROJECT]
+Target=build\default\production\contador.hex
+Processor_Text=PIC18F4620
+CCSVersion=5.012
+Compiler=PCH
+[Target Data]
+FileList=build\default\production\contador.c
+[Directories]
+Include=D:\Program Files (x86)\PICC\devices\;D:\Program Files (x86)\PICC\drivers\
+[build\default\debug\contador.c]
+Type=4
+[mru-list]
+1=build\default\production\contador.c
+[build\default\production\contador.c]
+Type=4
+[Units]
+Count=1
+1=contador (main)
