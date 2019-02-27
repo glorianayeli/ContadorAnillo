@@ -31,10 +31,10 @@ ROM Allocation:
 00003C  @cinit2
 
 Project Directory:
-    D:\Docs\UNIVERSIDAD\sistemasembebidos\proyectos\contador\contadoranillo.X\
+    D:\Docs\UNIVERSIDAD\sistemasembebidos\proyectos\ContadorAnillo\ContadorAnillo\
 
 Project Files:
-    contador.c                                              [25-feb.-19 16:40  CRC=C31C27BB]
+    contador.c                                              [25-feb.-19 19:37  CRC=C31C27BB]
     ..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4620.h [10-sep.-13 16:34  CRC=044A57BA]
 
 Source signature=CBB0D72F

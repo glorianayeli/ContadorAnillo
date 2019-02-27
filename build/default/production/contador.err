@@ -1,4 +1,4 @@
-D:\Docs\UNIVERSIDAD\sistemasembebidos\proyectos\contador\contadoranillo.X\contador.c:9:1:  Warning#203  Condition always TRUE
+D:\Docs\UNIVERSIDAD\sistemasembebidos\proyectos\ContadorAnillo\ContadorAnillo\contador.c:9:1:  Warning#203  Condition always TRUE
       Memory usage:   ROM=0%      RAM=0% - 0%
       0 Errors,  1 Warnings.
 Build Successful.

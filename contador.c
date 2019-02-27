@@ -1,12 +1,12 @@
 #include <18F4620.h>
 #fuses hs,nowdt
-#USE DELAY (clock=20M)
+#USE DELAY (clock=16000000)
 
 void main(void) {
     set_tris_d(0x00);
     output_d(0x00);
     int16 conteo;
-    while (1) {
+    while (TRUE) {
         /*output_d(0x01);
         delay_ms(500);
         output_d(0x02);
