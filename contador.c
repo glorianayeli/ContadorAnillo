@@ -6,7 +6,7 @@ void main(void) {
     set_tris_d(0x00);
     output_d(0x00);
     int16 conteo;
-    while (1) {
+    while (TRUE) {
         /*output_d(0x01);
         delay_ms(500);
         output_d(0x02);
