@@ -1,6 +1,6 @@
 #include <18F4620.h>
 #fuses hs,nowdt
-#USE DELAY (clock=20M)
+#USE DELAY (clock=16000000)
 
 void main(void) {
     set_tris_d(0x00);
@@ -23,7 +23,7 @@ void main(void) {
         delay_ms(500);
         output_d(0x80);
         delay_ms(500);*/
-        for(conteo=1;conteo<=128;conteo*=2)
+        for(conteo=1;conteo<=128;conteo/=2)
         {
             output_d(conteo);
             delay_ms(500);

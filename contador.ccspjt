@@ -6,7 +6,7 @@ Compiler=PCH
 [Target Data]
 FileList=build\default\production\contador.c
 [Directories]
-Include=D:\Program Files (x86)\PICC\devices\;D:\Program Files (x86)\PICC\drivers\
+Include=D:\Program Files (x86)\PICC\devices\;D:\Program Files (x86)\PICC\drivers\;C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
 [build\default\debug\contador.c]
 Type=4
 [mru-list]
@@ -16,3 +16,6 @@ Type=4
 [Units]
 Count=1
 1=contador (main)
+[Opened Files]
+1=contador.c
+2=
