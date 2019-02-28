@@ -1,16 +1,16 @@
-CCS PCH C Compiler, Version 5.012, 22068               25-feb.-19 16:40
+CCS PCH C Compiler, Version 5.012, 41559               27-feb.-19 19:41
 
-               Filename:   D:\Docs\UNIVERSIDAD\sistemasembebidos\proyectos\contador\contadoranillo.X\build\default\production\contador.lst
+               Filename:   C:\Users\L-L-Z\Downloads\Sistemas Embebidos Alumnos\Proyectos\ContadorAnillo\build\default\production\contador.lst
 
-               ROM used:   116 bytes (0%)
-                           Largest free fragment is 65420
+               ROM used:   118 bytes (0%)
+                           Largest free fragment is 65418
                RAM used:   5 (0%) at main() level
                            8 (0%) worst case
                Stack used: 1 locations
                Stack size: 31
 
 *
-00000:  GOTO   002C
+00000:  GOTO   002E
 .................... #include <18F4620.h> 
 .................... ///////////// Standard Header file for the PIC18F4620 device //////////////// 
 .................... /////////////////////////////////////////////////////////////////////////// 
@@ -27,42 +27,43 @@ CCS PCH C Compiler, Version 5.012, 22068               25-feb.-19 16:40
 .................... #list 
 ....................  
 .................... #fuses hs,nowdt 
-.................... #USE DELAY (clock=20M) 
+.................... #USE DELAY (clock=16000000) 
 00004:  CLRF   FEA
 00006:  MOVLW  08
 00008:  MOVWF  FE9
 0000A:  MOVF   FEF,W
-0000C:  BZ    0028
-0000E:  MOVLW  06
+0000C:  BZ    002A
+0000E:  MOVLW  05
 00010:  MOVWF  01
 00012:  CLRF   00
 00014:  DECFSZ 00,F
 00016:  BRA    0014
 00018:  DECFSZ 01,F
 0001A:  BRA    0012
-0001C:  MOVLW  7B
+0001C:  MOVLW  2E
 0001E:  MOVWF  00
 00020:  DECFSZ 00,F
 00022:  BRA    0020
-00024:  DECFSZ FEF,F
-00026:  BRA    000E
-00028:  GOTO   0064 (RETURN)
+00024:  BRA    0026
+00026:  DECFSZ FEF,F
+00028:  BRA    000E
+0002A:  GOTO   0066 (RETURN)
 ....................  
 .................... void main(void) { 
-0002C:  CLRF   FF8
-0002E:  BCF    FD0.7
-00030:  MOVF   FC1,W
-00032:  ANDLW  C0
-00034:  IORLW  0F
-00036:  MOVWF  FC1
-00038:  MOVLW  07
-0003A:  MOVWF  FB4
+0002E:  CLRF   FF8
+00030:  BCF    FD0.7
+00032:  MOVF   FC1,W
+00034:  ANDLW  C0
+00036:  IORLW  0F
+00038:  MOVWF  FC1
+0003A:  MOVLW  07
+0003C:  MOVWF  FB4
 ....................     set_tris_d(0x00); 
-0003C:  MOVLW  00
-0003E:  MOVWF  F95
+0003E:  MOVLW  00
+00040:  MOVWF  F95
 ....................     output_d(0x00); 
-00040:  CLRF   F95
-00042:  CLRF   F8C
+00042:  CLRF   F95
+00044:  CLRF   F8C
 ....................     int16 conteo; 
 ....................     while (1) { 
 ....................         /*output_d(0x01); 
@@ -81,37 +82,37 @@ CCS PCH C Compiler, Version 5.012, 22068               25-feb.-19 16:40
 ....................         delay_ms(500); 
 ....................         output_d(0x80); 
 ....................         delay_ms(500);*/ 
-....................         for(conteo=1;conteo<=128;conteo*=2) 
-00044:  CLRF   06
-00046:  MOVLW  01
-00048:  MOVWF  05
-0004A:  MOVF   06,F
-0004C:  BNZ   0070
-0004E:  MOVF   05,W
-00050:  SUBLW  80
-00052:  BNC   0070
+....................         for(conteo=1;conteo<=128;conteo/=2) 
+00046:  CLRF   06
+00048:  MOVLW  01
+0004A:  MOVWF  05
+0004C:  MOVF   06,F
+0004E:  BNZ   0072
+00050:  MOVF   05,W
+00052:  SUBLW  80
+00054:  BNC   0072
 ....................         { 
 ....................             output_d(conteo); 
-00054:  CLRF   F95
-00056:  MOVFF  05,F8C
+00056:  CLRF   F95
+00058:  MOVFF  05,F8C
 ....................             delay_ms(500); 
-0005A:  MOVLW  02
-0005C:  MOVWF  07
-0005E:  MOVLW  FA
-00060:  MOVWF  08
-00062:  BRA    0004
-00064:  DECFSZ 07,F
-00066:  BRA    005E
-00068:  BCF    FD8.0
-0006A:  RLCF   05,F
-0006C:  RLCF   06,F
-0006E:  BRA    004A
+0005C:  MOVLW  02
+0005E:  MOVWF  07
+00060:  MOVLW  FA
+00062:  MOVWF  08
+00064:  BRA    0004
+00066:  DECFSZ 07,F
+00068:  BRA    0060
+0006A:  BCF    FD8.0
+0006C:  RRCF   06,F
+0006E:  RRCF   05,F
+00070:  BRA    004C
 ....................         } 
-00070:  BRA    0044
+00072:  BRA    0046
 ....................          
 ....................     } 
 .................... } 
-00072:  SLEEP 
+00074:  SLEEP 
 
 Configuration Fuses:
    Word  1: C200   HS FCMEN IESO
