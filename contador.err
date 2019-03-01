@@ -1,1 +1,10 @@
-*** Error 24 "C:\Program Files (x86)\PICC\devices\18F4620.h" Line 11(9,19): Unknown device type    -- Try PCH
+*** Error 18 "contador.c" Line 1(9,20): File can not be opened
+    Not in "D:\Program Files (x86)\PICC\devices\18F4620.h"
+    Not in "D:\Program Files (x86)\PICC\drivers\18F4620.h"
+    Not in project "C:\Users\L-L-Z\Downloads\Sistemas Embebidos Alumnos\Proyectos\ContadorAnillo\18F4620.h"
+    Not in local "C:\Program Files (x86)\PICC\examples\18F4620.h"
+*** Error 128 "contador.c" Line 2(7,16): A #DEVICE required before this line
+*** Error 128 "contador.c" Line 3(5,8): A #DEVICE required before this line
+*** Error 12 "contador.c" Line 6(15,16): Undefined identifier  -- set_tris_d
+*** Error 12 "contador.c" Line 7(13,14): Undefined identifier  -- output_d
+*** Error 12 "contador.c" Line 28(21,22): Undefined identifier  -- output_d

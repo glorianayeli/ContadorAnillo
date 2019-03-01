@@ -1,4 +1,4 @@
-CCS PCH C Compiler, Version 5.012, 41559               28-feb.-19 21:13
+CCS PCH C Compiler, Version 5.012, 41559               27-feb.-19 19:41
 
                Filename:   C:\Users\L-L-Z\Downloads\Sistemas Embebidos Alumnos\Proyectos\ContadorAnillo\build\default\production\contador.lst
 
@@ -65,7 +65,7 @@ CCS PCH C Compiler, Version 5.012, 41559               28-feb.-19 21:13
 00042:  CLRF   F95
 00044:  CLRF   F8C
 ....................     int16 conteo; 
-....................     while (TRUE) { 
+....................     while (1) { 
 ....................         /*output_d(0x01); 
 ....................         delay_ms(500); 
 ....................         output_d(0x02); 
@@ -82,15 +82,15 @@ CCS PCH C Compiler, Version 5.012, 41559               28-feb.-19 21:13
 ....................         delay_ms(500); 
 ....................         output_d(0x80); 
 ....................         delay_ms(500);*/ 
-....................         for(conteo=128;conteo>=128;conteo/=2) 
+....................         for(conteo=1;conteo<=128;conteo/=2) 
 00046:  CLRF   06
-00048:  MOVLW  80
+00048:  MOVLW  01
 0004A:  MOVWF  05
 0004C:  MOVF   06,F
-0004E:  BNZ   0056
+0004E:  BNZ   0072
 00050:  MOVF   05,W
-00052:  SUBLW  7F
-00054:  BC    0072
+00052:  SUBLW  80
+00054:  BNC   0072
 ....................         { 
 ....................             output_d(conteo); 
 00056:  CLRF   F95
