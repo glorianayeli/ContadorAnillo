@@ -26,18 +26,18 @@ FF6-FF8 @READ_PROGRAM_MEMORY.P2
 
 ROM Allocation:
 000004  @delay_ms1
-00002C  @cinit1
-00002C  main
-00003C  @cinit2
+00002E  @cinit1
+00002E  main
+00003E  @cinit2
 
 Project Directory:
     D:\Docs\UNIVERSIDAD\sistemasembebidos\proyectos\ContadorAnillo\ContadorAnillo\
 
 Project Files:
-    contador.c                                              [25-feb.-19 19:37  CRC=C31C27BB]
+    contador.c                                              [02-mar.-19 12:45  CRC=FB6A65F7]
     ..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4620.h [10-sep.-13 16:34  CRC=044A57BA]
 
-Source signature=CBB0D72F
+Source signature=03FF156B
 
 Units:
     contador (main)

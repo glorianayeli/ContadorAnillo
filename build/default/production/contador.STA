@@ -1,9 +1,9 @@
 
-ROM used:   116/65536 (0%)
-            116/65536 (0%) including unused fragments
+ROM used:   118/65536 (0%)
+            118/65536 (0%) including unused fragments
 
             0.1 Average locations per line
-            12.9 Average locations per statement
+            13.1 Average locations per statement
 
 RAM used:   5/3968 (0%) at main() level
             8/3968 (0%) worst case
@@ -13,14 +13,14 @@ Stack size: 31
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   34     9 100  contador.c
+   35     9 100  contador.c
   834     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4620.h
 ----- -----
-  868     9 Total
+  869     9 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
-0     40  17    1             @delay_ms1
+0     42  18    1             @delay_ms1
 0     72  31    1   192  3.6  main
  Inline         0             @cinit1
 
@@ -39,7 +39,7 @@ Program metrics:
  Segment     Used  Free
 -----------  ----  ----
 00000-00002     4  0  
-00004-0FFFE   112  65420  
+00004-0FFFE   114  65418  
 
 
 
