@@ -30,12 +30,12 @@ ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 IMAGE_TYPE=debug
 OUTPUT_SUFFIX=cof
 DEBUGGABLE_SUFFIX=cof
-FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/contadoranillo.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/ContadorAnillo.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 else
 IMAGE_TYPE=production
 OUTPUT_SUFFIX=hex
 DEBUGGABLE_SUFFIX=cof
-FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/contadoranillo.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/ContadorAnillo.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 endif
 
 ifeq ($(COMPARE_BUILD), true)
@@ -87,7 +87,7 @@ FIXDEPS=fixDeps
 ifneq ($(INFORMATION_MESSAGE), )
 	@echo $(INFORMATION_MESSAGE)
 endif
-	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/contadoranillo.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+	${MAKE}  -f nbproject/Makefile-default.mk dist/${CND_CONF}/${IMAGE_TYPE}/ContadorAnillo.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
 MP_CC="D:\Program Files (x86)\PICC\CCSCON.exe"
 MP_LD="D:\Program Files (x86)\PICC\CCSCON.exe"
@@ -99,8 +99,8 @@ ${OBJECTDIR}/contador.o: contador.c  nbproject/Makefile-${CND_CONF}.mk
 ifeq (1,1) 
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 	${MP_CC}  out="${OBJECTDIR}"  contador.c +FH +DF +CC +Y=9 +EA +DF +LN +T +A +M +J +EA +Z -P #__18F4620=1 
-	@mv ${OBJECTDIR}/contador.cof "dist/${CND_CONF}/${IMAGE_TYPE}/contadoranillo.X.${IMAGE_TYPE}.cof" 
-	@mv ${OBJECTDIR}/contador.hex "dist/${CND_CONF}/${IMAGE_TYPE}/contadoranillo.X.${IMAGE_TYPE}.hex"
+	@mv ${OBJECTDIR}/contador.cof "dist/${CND_CONF}/${IMAGE_TYPE}/ContadorAnillo.${IMAGE_TYPE}.cof" 
+	@mv ${OBJECTDIR}/contador.hex "dist/${CND_CONF}/${IMAGE_TYPE}/ContadorAnillo.${IMAGE_TYPE}.hex"
 else 
 	${MP_CC}  out=""${OBJECTDIR}"" contador.c +EXPORT +FH +DF +CC +Y=9 +EA +DF +LN +T +A +M +J +EA +Z -P #__18F4620=1 +EXPORTD="${OBJECTDIR}"  
 	
@@ -112,8 +112,8 @@ ${OBJECTDIR}/contador.o: contador.c  nbproject/Makefile-${CND_CONF}.mk
 ifeq (1,1) 
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 	${MP_CC}  out="${OBJECTDIR}"  contador.c +FH +DF +CC +Y=9 +EA +DF +LN +T +A +M +J +EA +Z -P #__18F4620=1 
-	@mv ${OBJECTDIR}/contador.cof "dist/${CND_CONF}/${IMAGE_TYPE}/contadoranillo.X.${IMAGE_TYPE}.cof" 
-	@mv ${OBJECTDIR}/contador.hex "dist/${CND_CONF}/${IMAGE_TYPE}/contadoranillo.X.${IMAGE_TYPE}.hex"
+	@mv ${OBJECTDIR}/contador.cof "dist/${CND_CONF}/${IMAGE_TYPE}/ContadorAnillo.${IMAGE_TYPE}.cof" 
+	@mv ${OBJECTDIR}/contador.hex "dist/${CND_CONF}/${IMAGE_TYPE}/ContadorAnillo.${IMAGE_TYPE}.hex"
 else 
 	${MP_CC}  out=""${OBJECTDIR}"" contador.c +EXPORT +FH +DF +CC +Y=9 +EA +DF +LN +T +A +M +J +EA +Z -P #__18F4620=1 +EXPORTD="${OBJECTDIR}"  
 	
@@ -124,22 +124,22 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: link
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-dist/${CND_CONF}/${IMAGE_TYPE}/contadoranillo.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
+dist/${CND_CONF}/${IMAGE_TYPE}/ContadorAnillo.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 ifeq (1,1) 
 	
 else 
-	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=contadoranillo.X.${IMAGE_TYPE}.hex=${OBJECTDIR}/contador.o +Y=9 +EA +DF +LN +T +A +M +J +EA +Z -P
+	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=ContadorAnillo.${IMAGE_TYPE}.hex=${OBJECTDIR}/contador.o +Y=9 +EA +DF +LN +T +A +M +J +EA +Z -P
 	
 endif 
 	
 else
-dist/${CND_CONF}/${IMAGE_TYPE}/contadoranillo.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
+dist/${CND_CONF}/${IMAGE_TYPE}/ContadorAnillo.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
 ifeq (1,1) 
 	
 else 
-	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=contadoranillo.X.${IMAGE_TYPE}.hex=${OBJECTDIR}/contador.o +Y=9 +EA +DF +LN +T +A +M +J +EA +Z -P
+	${MP_LD}   out="dist/${CND_CONF}/${IMAGE_TYPE}"  +FH +DF +CC LINK=ContadorAnillo.${IMAGE_TYPE}.hex=${OBJECTDIR}/contador.o +Y=9 +EA +DF +LN +T +A +M +J +EA +Z -P
 	
 endif 
 	
