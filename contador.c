@@ -1,5 +1,6 @@
 #include <18F4620.h>
-#fuses hs,nowdt
+#fuses HS, NOFCMEN, NOIESO, PUT, NOBROWNOUT, NOWDT
+#fuses NOPBADEN, STVREN, NOLVP, NODEBUG, MCLR
 #USE DELAY (clock=16000000)
 
 void main(void) {
