@@ -13,10 +13,10 @@ Stack size: 31
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   34     9 100  contador.c
+   35     9 100  contador.c
   834     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4620.h
 ----- -----
-  868     9 Total
+  869     9 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
